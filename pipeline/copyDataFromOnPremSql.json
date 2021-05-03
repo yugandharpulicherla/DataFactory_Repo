@@ -54,11 +54,11 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"TableName": {
-								"value": "@concat('Production.',pipeline().parameters.TableName)",
+								"value": "@pipeline().parameters.TableName",
 								"type": "Expression"
 							},
 							"SchemaName": {
-								"value": "@activity('TableLookup').output.value",
+								"value": "@pipeline().parameters.SchemaName",
 								"type": "Expression"
 							}
 						}
@@ -262,6 +262,16 @@
 				}
 			}
 		],
+		"parameters": {
+			"TableName": {
+				"type": "string",
+				"defaultValue": "Product"
+			},
+			"SchemaName": {
+				"type": "string",
+				"defaultValue": "Production"
+			}
+		},
 		"annotations": [],
 		"lastPublishTime": "2021-05-02T17:48:18Z"
 	},

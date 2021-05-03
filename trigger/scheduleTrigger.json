@@ -8,9 +8,6 @@
 				"pipelineReference": {
 					"referenceName": "copyDataFromOnPremSql",
 					"type": "PipelineReference"
-				},
-				"parameters": {
-					"TableName": "Production.product"
 				}
 			}
 		],
