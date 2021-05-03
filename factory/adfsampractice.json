@@ -1,0 +1,9 @@
+{
+	"name": "adfsampractice",
+	"location": "westus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "3f6bb12c-1474-4b25-816f-0b9681327eec",
+		"tenantId": "5bf559db-45bc-4448-b4fa-a57cd84e2318"
+	}
+}
