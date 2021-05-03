@@ -262,11 +262,6 @@
 				}
 			}
 		],
-		"parameters": {
-			"TableName": {
-				"type": "string"
-			}
-		},
 		"annotations": [],
 		"lastPublishTime": "2021-05-02T17:48:18Z"
 	},
