@@ -251,7 +251,7 @@
 									"type": "DatasetReference",
 									"parameters": {
 										"FileName": {
-											"value": "@concat(pipeline().Pipeline,'_','Log_',formatDateTime(utcnow(),'yyyyMMdd'),'.csv')",
+											"value": "@concat(pipeline().Pipeline,'_',item().TableName,'_','Log_',formatDateTime(utcnow(),'yyyyMMdd'),'.csv')",
 											"type": "Expression"
 										}
 									}
